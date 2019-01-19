@@ -1,15 +1,15 @@
-img {
-  width: 25%;
+var count = 0;
+
+function like() {
+  count += 1;
+  document.getElementById('count').innerHTML = count;
 }
 
-button {
-  background-color: #00008B;
-    color: white;
-  text-align: center;
-  font-family: "";
+function dislike() {
+  count-= 1;
+  updateUI();
 }
 
-body {
-  background-color: #000099;
-  color: white;
+function updateUI() {
+  document.getElementById('count').innerHTML = count;
 }
